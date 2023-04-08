@@ -230,14 +230,187 @@ header {
   opacity: 0.75;
 }
 
+.header__title-form {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.header__sign-form {
+  width: 300px;
+  background-color: #a2a2db;
+  padding: 32px;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #ccc;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.form-input,
+.form-button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.header__input-sign-in {
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.form-label {
+  margin-bottom: 32px;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0 0 10px 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px black;
+  outline: none;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.form-input:focus {
+  border-bottom: solid 1px green;
+}
+
+.form-button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: #1b7dff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #345b8e;
+}
+
+.form-input:focus > .form-label {
+  top: -18px;
+  font-size: 10px;
+}
+
+.form-group {
+  opacity: 0;
+}
+
+.form-show {
+  opacity: 1;
+}
+
 /* Header styles end*/
 
 /* Intro styles start*/
-
 .intro {
-  height: 100vh;
+  min-height: 100vh;
   background: url(../img/hero-background/hero.png) no-repeat;
   background-size: cover;
+  padding-top: 263px;
 }
 
 /* Intro styles end*/
+
+/*Intro title*/
+
+.intro__title {
+  max-width: 619px;
+  font-style: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.intro__subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 546px;
+  margin-bottom: 59px;
+}
+
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form__field {
+  background: none;
+  margin-right: 60px;
+  border: inherit;
+
+  width: 291px;
+  background: url(../img/svg/circle.svg) no-repeat left center;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #bfc0c5;
+  padding-left: 43px;
+  /* padding-bottom: 22px; */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.search-form__field::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.search-form__field:first-child {
+  margin-left: 0px;
+}
+
+.search-form__submit {
+  background: #1b7dff;
+  border: inherit;
+  width: 171px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+}
+
+.search-form__submit:hover {
+  background-color: #345b8e;
+}
