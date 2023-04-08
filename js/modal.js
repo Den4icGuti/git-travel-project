@@ -8,14 +8,7 @@ console.log(refs);
 const onOpenForm = (e) => {
   e.preventDefault();
   refs.form.classList.add("form-show");
+  console.log(e);
 };
-
-const onCloseForm = (e) => {
-  if (e.currentTarget === e.currentTarget) {
-    refs.signForm.classList.remove("form-show");
-  }
-};
-
-document.body("click", onCloseForm);
 
 refs.signForm.addEventListener("click", onOpenForm);
