@@ -603,7 +603,7 @@ header {
   color: #006dfe;
   text-decoration: none;
   padding-right: 59px;
-  background: url(/img/svg/arrow.svg) no-repeat right center;
+  background: url(../img/svg/arrow.svg) no-repeat right center;
   transition: 0.2s all;
 }
 
