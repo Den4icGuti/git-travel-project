@@ -11,7 +11,7 @@
     "build": "parcel build *.html"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/Den4icGuti/git-travel-project.git"
   },
   "keywords": [],
