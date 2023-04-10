@@ -1,7 +1,12 @@
+import { toast } from "./service";
+
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
+  form: document.querySelector(".js-singn-form"),
 };
+
+console.log(refs);
 
 refs.btnOpenForm.addEventListener("click", onOpenForm);
 
@@ -28,3 +33,27 @@ function onKeyPressEsc(e) {
     onCloseForm();
   }
 }
+
+function onSubmitForm(e) {
+  e.preventDefault();
+  const email = e.currentTarget.email.value;
+  const password = e.currentTarget.password.value;
+
+  if (email === "" || password.length < 4) {
+    toast.showToast();
+    return;
+  }
+  const dataUser = {
+    email,
+    password,
+  };
+
+  const db = [];
+
+  const res = [dataUser, ...db];
+
+  console.log(res);
+  refs.form.reset();
+}
+
+refs.form.addEventListener("submit", onSubmitForm);

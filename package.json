@@ -23,5 +23,9 @@
   "homepage": "https://github.com/Den4icGuti/git-travel-project#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.13.0",
+    "toastify-js": "^1.12.0"
   }
 }
