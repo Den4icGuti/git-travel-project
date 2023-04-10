@@ -359,6 +359,7 @@ header {
     rgba(53, 66, 103, 0.0001) 0%,
     #151824 95.04%
   );
+  z-index: 5;
 }
 
 .btn-sign {
@@ -566,7 +567,7 @@ header {
   text-decoration: none;
   color: #006dfe;
   padding-right: 59px;
-  background: url(/img/svg/arrow.svg) no-repeat 95% center;
+  background: url(../img/svg/arrow.svg) no-repeat 95% center;
   transition: 0.2s all;
 }
 

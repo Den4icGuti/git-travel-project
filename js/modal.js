@@ -1,4 +1,4 @@
-import { toast } from "./service";
+import toast from "./service";
 
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
@@ -54,6 +54,7 @@ function onSubmitForm(e) {
 
   console.log(res);
   refs.form.reset();
+  return db;
 }
 
 refs.form.addEventListener("submit", onSubmitForm);
