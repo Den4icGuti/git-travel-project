@@ -575,7 +575,7 @@ header {
 .benefits__card-link:focus {
   /* transform: scale(1.1); */
 
-  background: url(/img/svg/arrow.svg) no-repeat right center;
+  background: url(../img/svg/arrow.svg) no-repeat right center;
 }
 
 /* Benefits style end*/

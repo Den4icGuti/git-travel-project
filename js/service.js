@@ -14,4 +14,4 @@ const toast = Toastify({
   },
 });
 
-export default toast;
+// export default toast;
