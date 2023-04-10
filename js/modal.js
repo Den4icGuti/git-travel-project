@@ -1,9 +1,24 @@
-import { toast } from "./service";
+import Toastify from "toastify-js";
+import "toastify-js/src/toastify.css";
+
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
   form: document.querySelector(".js-sign-form"),
 };
+
+const toast = Toastify({
+  text: "All fields must be hidden",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "#b1693d",
+  },
+});
 
 console.log(refs);
 
