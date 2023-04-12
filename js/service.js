@@ -1,7 +1,7 @@
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 
-export default toast = Toastify({
+export const toast = Toastify({
   text: "All fields must be hidden",
   duration: 3000,
   newWindow: true,
