@@ -1,4 +1,4 @@
-import toast from "./service";
+import toast from "../js/service";
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
