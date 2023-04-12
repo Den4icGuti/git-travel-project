@@ -426,6 +426,10 @@ header {
 
 /*Intro search form*/
 
+.search-form {
+  margin-bottom: 153px;
+}
+
 .search-form__info {
   display: flex;
   flex-wrap: wrap;
