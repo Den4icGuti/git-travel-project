@@ -7,8 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "parcel *.html",
-    "build": "parcel build *.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
