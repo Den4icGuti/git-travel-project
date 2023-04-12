@@ -1,5 +1,5 @@
 import Toastify from "toastify-js";
-import "toastify-js/src/toastify.css";
+import "../node_modules/toastify-js/src/toastify.css";
 
 export const toast = Toastify({
   text: "All fields must be hidden",
