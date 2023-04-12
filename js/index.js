@@ -1,4 +1,4 @@
-import { toast } from "./service";
+// import { toast } from "./service";
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
@@ -39,7 +39,7 @@ function onSubmitForm(e) {
   const password = e.currentTarget.password.value;
 
   if (email === "" || password.length < 4) {
-    toast.showToast("All fields must be filled");
+    alert("All fields must be filled")
     return;
   }
   const dataUser = {
