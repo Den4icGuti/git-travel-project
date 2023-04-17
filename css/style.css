@@ -429,7 +429,7 @@ header {
 .search-form__info {
   display: flex;
   flex-wrap: wrap;
-/*   padding-bottom: 153px; */
+  /*   padding-bottom: 153px; */
 }
 
 .search-form__field {
@@ -756,6 +756,68 @@ header {
 }
 .visit__title {
   margin-bottom: 55px;
+}
+
+.visit__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+
+.visit__card-pic {
+  position: relative;
+}
+
+.visit__card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  background: rgba(21, 24, 36, 0.6);
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+}
+
+.visit__card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 25px;
+  color: #ffffff;
+  margin: 0 auto 0 0;
+}
+
+.visit__card-likes {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 20px;
+  background: url(../img/svg/heart.svg) no-repeat right center;
+  margin-right: 14px;
+}
+
+.visit__card-comment {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 23px;
+  background: url(../img/svg/comment.svg) no-repeat right center;
+  margin-right: 14px;
+}
+
+.visit__card-comment {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 20px;
 }
 /* Visit style end*/
 

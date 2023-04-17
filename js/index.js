@@ -33,13 +33,15 @@ function onKeyPressEsc(e) {
   }
 }
 
+const db = [];
+
 function onSubmitForm(e) {
   e.preventDefault();
   const email = e.currentTarget.email.value;
   const password = e.currentTarget.password.value;
 
   if (email === "" || password.length < 4) {
-    alert("All fields must be filled")
+    alert("All fields must be filled");
     return;
   }
   const dataUser = {
@@ -47,11 +49,8 @@ function onSubmitForm(e) {
     password,
   };
 
-  const db = [];
+  const newUser = [dataUser, ...db];
 
-  const res = [dataUser, ...db];
-
-  console.log(res);
   refs.form.reset();
 }
 
