@@ -429,6 +429,7 @@ header {
 .search-form__info {
   display: flex;
   flex-wrap: wrap;
+/*   padding-bottom: 153px; */
 }
 
 .search-form__field {
