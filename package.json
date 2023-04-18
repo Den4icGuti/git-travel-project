@@ -25,7 +25,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
     "simplelightbox": "^2.13.0",
     "toastify-js": "^1.12.0"
   }
