@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "homepage": "https://github.com/Den4icGuti/git-travel-project",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "start": "parcel *index.html",
-    "build": "parcel build *index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /git-travel-project/"
   },
   "repository": {
     "type": "git",
@@ -21,12 +21,11 @@
   "bugs": {
     "url": "https://github.com/Den4icGuti/git-travel-project/issues"
   },
-  "homepage": "https://github.com/Den4icGuti/git-travel-project#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "aos": "^2.3.4",
+    "aos": "^3.0.0-beta.6",
     "simplelightbox": "^2.13.0",
     "toastify-js": "^1.12.0"
   }
