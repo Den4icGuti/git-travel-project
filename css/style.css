@@ -182,6 +182,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .wrapper {
@@ -256,6 +257,8 @@ header {
   /* identical to box height, or 133% */
 
   color: #ffffff;
+
+  transition: 0.2s all;
 }
 
 .header__link:hover,
@@ -636,7 +639,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(21, 24, 36, 0.4);
+  /* background: rgba(21, 24, 36, 0.4); */
   z-index: 2;
 }
 
@@ -764,8 +767,14 @@ header {
   grid-gap: 57px;
 }
 
+.visit__card {
+  display: flex;
+  flex-direction: column;
+}
+
 .visit__card-pic {
   position: relative;
+  margin-bottom: 45px;
 }
 
 .visit__card-stats {
@@ -775,16 +784,17 @@ header {
   justify-content: flex-end;
   position: absolute;
   background: rgba(21, 24, 36, 0.6);
-  bottom: 2px;
+  bottom: 0;
   left: 0;
   width: 100%;
+  padding: 0px 25px;
 }
 
 .visit__card-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  padding: 16px 25px;
+  padding: 16px 0px;
   color: #ffffff;
   margin: 0 auto 0 0;
 }
@@ -808,7 +818,6 @@ header {
   color: #ffffff;
   padding-right: 23px;
   background: url(../img/svg/comment.svg) no-repeat right center;
-  margin-right: 14px;
 }
 
 .visit__card-comment {
@@ -817,7 +826,36 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-  padding-right: 20px;
+}
+
+.visit__card-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  color: #102746;
+  margin-bottom: 31px;
+}
+
+.visit__card-more {
+  width: 118px;
+  background: #006dfe;
+  text-decoration: none;
+  padding: 12px 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  transition: 0.2s all;
+
+  margin: auto 0 0 0;
+}
+.visit__card-more:hover,
+.visit__card-more:focus {
+  background: #203258;
 }
 /* Visit style end*/
 
