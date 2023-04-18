@@ -2,7 +2,7 @@
 import Aos from "aos";
 import "../node_modules/aos/dist/aos.css";
 
-aos();
+Aos.init();
 
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
