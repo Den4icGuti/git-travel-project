@@ -1,7 +1,4 @@
 // import { toast } from "./service";
-import Aos from "aos";
-
-import "../node_modules/aos/dist/aos.css";
 Aos.init();
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
