@@ -1,5 +1,5 @@
 // import { toast } from "./service";
-import { aos } from "./service";
+import Aos from "aos";
 import "../node_modules/aos/dist/aos.css";
 
 aos();
