@@ -1,3 +1,7 @@
+import Aos from "aos";
+
+export const aos = Aos.init();
+
 // import Toastify from "toastify-js";
 // import "../node_modules/toastify-js/src/toastify.css";
 
