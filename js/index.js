@@ -1,16 +1,16 @@
 // import { toast } from "./service";
-import { aos } from "./service";
-import "aos/dist/aos.css";
+import Aos from "aos";
 
-aos();
-
+import "../node_modules/aos/dist/aos.css";
+Aos.init();
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
   form: document.querySelector(".js-sign-form"),
+  animateScroll: document.querySelector(".js-anim_items"),
 };
 
-const { btnOpenForm, formGroup, form } = refs;
+const { animateScroll, btnOpenForm, formGroup, form } = refs;
 
 console.log(refs);
 
