@@ -1,12 +1,12 @@
-// import { toast } from "./service"
+import Notiflix from "notiflix";
+
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
   form: document.querySelector(".js-sign-form"),
-  animateScroll: document.querySelector(".js-anim_items"),
 };
 
-const { animateScroll, btnOpenForm, formGroup, form } = refs;
+const { btnOpenForm, formGroup, form } = refs;
 
 console.log(refs);
 
@@ -44,9 +44,14 @@ function onSubmitForm(e) {
   const password = e.currentTarget.password.value;
 
   if (email === "" || password.length < 4) {
-    alert("All fields must be filled");
+    Notiflix.Notify.warning("Fields must be filled", {
+      timeout: 1500,
+      position: "center-top",
+      clickToClose: true,
+    });
     return;
   }
+
   const dataUser = {
     email,
     password,

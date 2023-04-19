@@ -1,31 +1,29 @@
 {
   "name": "git-travel-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "practik'",
   "main": "index.js",
-  "homepage": "https://github.com/Den4icGuti/git-travel-project",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url /git-travel-project/"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Den4icGuti/git-travel-project.git"
   },
-  "keywords": [],
   "author": "Denis Gutin <goos7412@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Den4icGuti/git-travel-project/issues"
   },
+  "homepage": "https://github.com/Den4icGuti/git-travel-project#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "simplelightbox": "^2.13.0",
-    "toastify-js": "^1.12.0"
+    "notiflix": "^3.2.6"
   }
 }
