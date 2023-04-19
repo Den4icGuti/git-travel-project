@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "practik'",
   "main": "index.js",
+  "homepage": "https://den4icguti.github.io/git-travel-project",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "start": "parcel *.html",
-    "build": "parcel build *.html"
+    "build": "parcel build *.html --public-url /git-travel-project/"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/Den4icGuti/git-travel-project/issues"
   },
-  "homepage": "https://github.com/Den4icGuti/git-travel-project#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
