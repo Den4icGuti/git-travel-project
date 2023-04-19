@@ -219,11 +219,19 @@ img {
 
 /* Header styles start*/
 
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  transition: 200ms all;
+}
+
+.header-active {
+  background: #0e1d28;
+  opacity: 0.6;
+  transition: 200ms all;
+  z-index: 15;
 }
 
 .header__wrapper {

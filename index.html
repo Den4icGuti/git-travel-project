@@ -10,7 +10,7 @@
   </head>
   <body>
     <!--Header start -->
-    <header>
+    <header class="header js-header">
       <div class="wrapper">
         <div class="header__wrapper">
           <div class="header__logo">
@@ -289,9 +289,13 @@
     <!--Places-visit start-->
     <section class="visit">
       <div class="wrapper-full">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50">
         <h2 class="visit__title section-title">Today top places to visit</h2>
+        </div>
         <div class="visit__cards">
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50">
           <div class="visit__card">
+            
             <div class="visit__card-pic">
               <img
                 loading="lazy"
@@ -316,6 +320,8 @@
             </p>
             <a href="!#" class="visit__card-more">SEE MORE</a>
           </div>
+          </div>
+            <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="75">
           <div class="visit__card">
             <div class="visit__card-pic">
               <img
@@ -341,6 +347,8 @@
             </p>
             <a href="!#" class="visit__card-more">SEE MORE</a>
           </div>
+          </div>
+          <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50">
           <div class="visit__card">
             <div class="visit__card-pic">
               <img
@@ -366,6 +374,8 @@
             </p>
             <a href="!#" class="visit__card-more">SEE MORE</a>
           </div>
+          </div>
+           <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50">
           <div class="visit__card">
             <div class="visit__card-pic">
               <img
@@ -391,6 +401,8 @@
             </p>
             <a href="!#" class="visit__card-more">SEE MORE</a>
           </div>
+          </div>  
+           <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="75">
           <div class="visit__card">
             <div class="visit__card-pic">
               <img
@@ -416,6 +428,8 @@
             </p>
             <a href="!#" class="visit__card-more">SEE MORE</a>
           </div>
+          </div>
+           <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50">
           <div class="visit__card">
             <div class="visit__card-pic">
               <img
@@ -441,10 +455,15 @@
             </p>
             <a href="!#" class="visit__card-more">SEE MORE</a>
           </div>
+          </div>
         </div>
       </div>
     </section>
     <!--Places-visit end-->
+     <!--video section start-->
+   
+
+     <!--video section end-->
     <div class="video"></div>
     <div class="form-group js-form-group">
       <form class="header__sign-form js-sign-form">
@@ -471,10 +490,22 @@
       </form>
     </div>
 
-    <script src="./src/js/index.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+   
+    <script src="./src/js/index.js" ></script>
+     <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
     AOS.init();
   </script>
+    
+
+ 
+  
   </body>
 </html>

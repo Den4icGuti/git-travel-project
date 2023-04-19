@@ -1,9 +1,8 @@
-import notification from "../js/service";
-
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
   form: document.querySelector(".js-sign-form"),
+  header: document.querySelector(".js-header"),
 };
 
 const { btnOpenForm, formGroup, form } = refs;
@@ -25,6 +24,7 @@ function onCloseForm() {
 }
 
 function onBackdropClick(e) {
+  console.log(e);
   if (e.target === e.currentTarget) {
     onCloseForm();
   }
@@ -44,7 +44,7 @@ function onSubmitForm(e) {
   const password = e.currentTarget.password.value;
 
   if (email === "" || password.length < 4) {
-    notification();
+    alert("");
     return;
   }
 
@@ -59,3 +59,21 @@ function onSubmitForm(e) {
 }
 
 form.addEventListener("submit", onSubmitForm);
+
+// function onScrollHeader(e) {}
+
+let scrollEvent = 0;
+
+const onScroll = () => {
+  const pageScroll = window.pageYOffset;
+
+  return pageScroll > 50
+    ? refs.header.classList.add("header-active")
+    : refs.header.classList.remove("header-active");
+};
+
+setTimeout(() => {
+  onScroll();
+}, 300);
+
+document.addEventListener("scroll", onScroll);
