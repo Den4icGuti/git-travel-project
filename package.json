@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "practik'",
   "main": "index.js",
+  "type": "module",
   "homepage": "den4icguti.github.io/git-travel-project/",
   "directories": {
     "lib": "lib"

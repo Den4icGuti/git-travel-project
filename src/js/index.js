@@ -1,4 +1,4 @@
-import Notiflix from "notiflix";
+import notification from "../js/service";
 
 const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
@@ -44,11 +44,7 @@ function onSubmitForm(e) {
   const password = e.currentTarget.password.value;
 
   if (email === "" || password.length < 4) {
-    Notiflix.Notify.warning("Fields must be filled", {
-      timeout: 1500,
-      position: "center-top",
-      clickToClose: true,
-    });
+    notification();
     return;
   }
 
