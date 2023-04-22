@@ -53,8 +53,8 @@ function onSubmitForm(e) {
     password,
   };
 
-  const newUser = [dataUser, ...db];
-  console.log(newUser);
+  console.log(JSON.stringify(dataUser));
+
   form.reset();
 }
 
