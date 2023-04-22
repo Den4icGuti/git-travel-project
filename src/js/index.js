@@ -62,10 +62,9 @@ form.addEventListener("submit", onSubmitForm);
 
 // function onScrollHeader(e) {}
 
-let scrollEvent = 0;
-
 const onScroll = () => {
   const pageScroll = window.pageYOffset;
+  console.log(pageScroll);
 
   return pageScroll > 50
     ? refs.header.classList.add("header-active")
@@ -74,6 +73,6 @@ const onScroll = () => {
 
 setTimeout(() => {
   onScroll();
-}, 300);
+}, 2000);
 
 document.addEventListener("scroll", onScroll);
