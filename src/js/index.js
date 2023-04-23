@@ -71,8 +71,4 @@ const onScroll = () => {
     : refs.header.classList.remove("header-active");
 };
 
-setTimeout(() => {
-  onScroll();
-}, 2000);
-
 document.addEventListener("scroll", onScroll);
