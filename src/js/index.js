@@ -2,12 +2,13 @@ const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
   form: document.querySelector(".js-sign-form"),
+  burger: document.querySelector(".js-burger"),
   header: document.querySelector(".js-header"),
 };
 
 const { btnOpenForm, formGroup, form } = refs;
 
-console.log(refs);
+// console.log(refs);
 
 btnOpenForm.addEventListener("click", onOpenForm);
 
@@ -59,8 +60,6 @@ function onSubmitForm(e) {
 }
 
 form.addEventListener("submit", onSubmitForm);
-
-// function onScrollHeader(e) {}
 
 const onScroll = () => {
   const pageScroll = window.pageYOffset;
