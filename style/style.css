@@ -979,7 +979,12 @@ img {
     background-color: #000000;
     padding: 50px;
     z-index: 10;
-    transform: translateX(-100%);
+    transform: translateX(100%);
+    transition: 0.1s all linear;
+  }
+
+  .header__nav-active {
+    transform: translateX(0);
   }
 
   .header__item {
@@ -1002,7 +1007,7 @@ img {
   }
 
   .form-group {
-    z-index: 100;
+    z-index: 200;
   }
 
   .header__nav-close {

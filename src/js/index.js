@@ -2,9 +2,10 @@ const refs = {
   btnOpenForm: document.querySelector(".js-btn-form"),
   formGroup: document.querySelector(".js-form-group"),
   form: document.querySelector(".js-sign-form"),
-  burger: document.querySelector(".js-burger"),
+  burgerOpen: document.querySelector(".js-burger"),
   header: document.querySelector(".js-header"),
   menu: document.querySelector(".js-nav-menu"),
+  menuClose: document.querySelector(".js-nav-menu-close"),
 };
 
 const { btnOpenForm, formGroup, form } = refs;
@@ -71,7 +72,13 @@ const onScroll = () => {
 document.addEventListener("scroll", onScroll);
 
 const onOpenMenu = () => {
-  refs.menu.classList.add("header__nav-open");
+  refs.menu.classList.add("header__nav-active");
 };
 
-refs.burger.addEventListener("click", onOpenMenu);
+refs.burgerOpen.addEventListener("click", onOpenMenu);
+
+const onCloseMenu = () => {
+  refs.menu.classList.remove("header__nav-active");
+};
+
+refs.menuClose.addEventListener("click", onCloseMenu);
