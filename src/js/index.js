@@ -4,6 +4,7 @@ const refs = {
   form: document.querySelector(".js-sign-form"),
   burger: document.querySelector(".js-burger"),
   header: document.querySelector(".js-header"),
+  menu: document.querySelector(".js-nav-menu"),
 };
 
 const { btnOpenForm, formGroup, form } = refs;
@@ -37,15 +38,13 @@ function onKeyPressEsc(e) {
   }
 }
 
-const db = [];
-
 function onSubmitForm(e) {
   e.preventDefault();
   const email = e.currentTarget.email.value;
   const password = e.currentTarget.password.value;
 
   if (email === "" || password.length < 4) {
-    alert("");
+    alert("All field fool");
     return;
   }
 
@@ -63,7 +62,6 @@ form.addEventListener("submit", onSubmitForm);
 
 const onScroll = () => {
   const pageScroll = window.pageYOffset;
-  console.log(pageScroll);
 
   return pageScroll > 50
     ? refs.header.classList.add("header-active")
@@ -71,3 +69,9 @@ const onScroll = () => {
 };
 
 document.addEventListener("scroll", onScroll);
+
+const onOpenMenu = () => {
+  refs.menu.classList.add("header__nav-open");
+};
+
+refs.burger.addEventListener("click", onOpenMenu);
