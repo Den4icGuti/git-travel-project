@@ -966,7 +966,7 @@ img {
 /* footer style end*/
 
 /* Media  start*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__burger {
     display: block;
   }
@@ -1037,6 +1037,33 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(50%) rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-form__field {
+    margin-bottom: 25px;
+  }
+
+  .benefits__cards {
+    padding: 0 15px;
+    grid-column-gap: 35px;
+  }
+  .benefits__title {
+    padding: 55px 15px;
+  }
+  .benefits__card {
+    margin-bottom: 75px;
+  }
+  .benefits {
+    margin-bottom: 70px;
+  }
+
+  .places__card_size_lg {
+    grid-column: span 6;
+  }
+  .places__card_size_sm {
+    grid-column: span 6;
   }
 }
 /* Media  end*/
