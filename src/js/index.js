@@ -6,13 +6,16 @@ const refs = {
   header: document.querySelector(".js-header"),
   menu: document.querySelector(".js-nav-menu"),
   menuClose: document.querySelector(".js-nav-menu-close"),
+  btn: document.querySelector(".js-btn"),
 };
 
-const { btnOpenForm, formGroup, form } = refs;
+const { btnOpenForm, formGroup, form, btn } = refs;
 
 // console.log(refs);
 
 btnOpenForm.addEventListener("click", onOpenForm);
+
+btn.addEventListener("click", onOpenForm);
 
 formGroup.addEventListener("click", onBackdropClick);
 
@@ -54,7 +57,9 @@ function onSubmitForm(e) {
     password,
   };
 
-  console.log(JSON.stringify(dataUser));
+  const data = JSON.stringify(dataUser);
+
+  localStorage.setItem("user", data);
 
   form.reset();
 }
