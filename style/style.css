@@ -1101,6 +1101,7 @@ img {
   .header__sign-form {
     width: 280px;
   }
+
   .intro__title {
     text-align: center;
     font-size: 25px;
@@ -1167,6 +1168,11 @@ img {
   .search-form__field {
     margin-bottom: 25px;
   }
+
+  .visit__card-pic {
+    max-width: 386px;
+  }
+
   .benefits__cards {
     padding: 0 15px;
     grid-column-gap: 35px;
