@@ -151,24 +151,24 @@ body {
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/lato-v23-latin-regular.woff2") format("woff2"),
-    url("../fonts/lato-v23-latin-regular.woff") format("woff");
+  src: url(../fonts/lato-v23-latin-regular.woff2) format("woff2"),
+    url(../fonts/lato-v23-latin-regular.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   font-family: Lato;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/lato-v23-latin-700.woff2") format("woff2"),
-    url("../fonts/lato-v23-latin-700.woff") format("woff");
+  src: url(../fonts/lato-v23-latin-700.woff2) format("woff2"),
+    url(../fonts/lato-v23-latin-700.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/lato-v23-latin-900.woff2") format("woff2"),
-    url("../fonts/lato-v23-latin-900.woff") format("woff");
+  src: url(../fonts/lato-v23-latin-900.woff2) format("woff2"),
+    url(../fonts/lato-v23-latin-900.woff) format("woff");
 }
 *,
 ::after,
@@ -567,7 +567,7 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 55px;
+  column-gap: 55px;
   padding: 0 100px;
 }
 .benefits__card {
@@ -761,7 +761,7 @@ img {
   color: #006dfe;
   padding-right: 59px;
   transition: 0.2s;
-  background: url("../img/svg/arrow.svg") 95% center no-repeat;
+  background: url(../img/svg/arrow.svg) 95% center no-repeat;
 }
 .visit__card-comment,
 .visit__card-likes,
@@ -771,7 +771,7 @@ img {
   line-height: 24px;
 }
 .tour__more:hover {
-  background: url("../img/svg/arrow.svg") right center no-repeat;
+  background: url(../img/svg/arrow.svg) right center no-repeat;
 }
 .tour__info {
   padding-left: 44px;
