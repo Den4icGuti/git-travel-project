@@ -7,9 +7,16 @@ const refs = {
   menu: document.querySelector(".js-nav-menu"),
   menuClose: document.querySelector(".js-nav-menu-close"),
   btn: document.querySelector(".js-btn"),
+  headerLink: document.querySelectorAll(".js-header-link"),
 };
 
-const { btnOpenForm, formGroup, form, btn } = refs;
+const { btnOpenForm, formGroup, form, btn, headerLink } = refs;
+
+console.log(headerLink);
+
+function onCloseBurgerMenu() {
+  console.log("close");
+}
 
 // console.log(refs);
 
@@ -59,7 +66,7 @@ function onSubmitForm(e) {
 
   const data = JSON.stringify(dataUser);
 
-  localStorage.setItem("user", data);
+  localStorage.setItem("dataUser", data);
 
   form.reset();
 }
@@ -87,3 +94,50 @@ const onCloseMenu = () => {
 };
 
 refs.menuClose.addEventListener("click", onCloseMenu);
+
+function widthDocument() {
+  if (window.innerWidth <= 768) {
+    for (let i = 0; i < headerLink.length; i += 1) {
+      const eventHandling = headerLink[i];
+      eventHandling.addEventListener("click", onCloseMenu);
+    }
+  }
+}
+
+widthDocument();
+(function () {
+  const smoothScroll = function (targetEl, duration) {
+    const headerElHeight = document.querySelector(".header").clientHeight;
+    let target = document.querySelector(targetEl);
+    let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+    let startPosition = window.pageYOffset;
+    let startTime = null;
+
+    const ease = function (t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
+    const animation = function (currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, targetPosition, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
+    requestAnimationFrame(animation);
+  };
+
+  const scrollTo = function () {
+    const links = document.querySelectorAll(".js-scroll");
+    links.forEach((each) => {
+      each.addEventListener("click", function () {
+        const currentTarget = this.getAttribute("href");
+        smoothScroll(currentTarget, 1000);
+      });
+    });
+  };
+  scrollTo();
+})();
